@@ -4,6 +4,33 @@
   </head>
 
   <body>
-    <?php include 'php/Quiz.php';?>
+    <form action = 'php/Quiz.php' method = "post">
+    	<p>Who let's the orcs into Azeroth?</p>
+        <input type="radio" name ="Question1" value="Garona">Garona</input>
+        <input type="radio" name ="Question1" value="Medivh">Medivh</input>
+        <input type="radio" name ="Question1" value="Khadgar">Khadgar</input>
+        <input type="radio" name ="Question1" value="Durotan">Durotan</input>
+    	<p>Who is the king of Stormwind when the orcs first arrive in Azeroth?</p>
+        <input type="radio" name ="Question2" value="Anduin Lothar">Anduin Lothar</input>
+        <input type="radio" name ="Question2" value="Varian Wrynn">Varian Wrynn</input>
+        <input type="radio" name ="Question2" value="Llane Wrynn">Llane Wrynn</input>
+        <input type="radio" name ="Question2" value="Anduin Wrynn">Anduin Wrynn</input>
+    	<p>To which kingdom do the survivors of the siege of Stormwind flee?</p>
+        <input type="radio" name ="Question3" value="Lordaeron">Lordaeron</input>
+        <input type="radio" name ="Question3" value="Dalaran">Dalaran</input>
+        <input type="radio" name ="Question3" value="Stromgarde">Stromgarde</input>
+        <input type="radio" name ="Question3" value="Gilneas">Gilneas</input>
+    	<p>Who is the Warchief of the Horde during the second war?</p>
+        <input type="radio" name ="Question4" value="Blackhand">Blackhand</input>
+        <input type="radio" name ="Question4" value="Guldan">Guldan</input>
+        <input type="radio" name ="Question4" value="Thrall">Thrall</input>
+        <input type="radio" name ="Question4" value="Orgrim Doomhammer">Orgrim Doomhammer</input>
+    	<p>From which city is Arthas Menethil?</p>
+        <input type="radio" name ="Question5" value="Capital City (Lordaeron)">Capital City (Lordaeron)</input>
+        <input type="radio" name ="Question5" value="Stormwind">Stormwind</input>
+        <input type="radio" name ="Question5" value="Stromgarde">Stromgarde</input>
+        <input type="radio" name ="Question5" value="Gilneas">Gilneas</input><br>
+      <button name = "Submit">Submit Answers</button>
+	   </form>
   </body>
 </html>
