@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>WEB STORE</title>
+		<script src = "js/formChecker.js" type = "text/Javascript"></script>
+		<link href = "css/style.css" rel = "stylesheet" type = "text/css"/>
+	</head>
+	
+	<body>
+		<h1>Welcome To My Web Store!</h1>
+		
+		<form id = "store" action = "php/customerBackend.php" method = "post" onsubmit = "formChecker()">
+			Enter your username (in the form of name@domain.com): <input type = "text" name = "Username" id = "Username"></input><br>
+			Enter your password: <input type = "password" name = "Password" id = "Password"></input>
+			<br><br>
+			
+			<h2>Our items:<br></h2>
+			<table class = "items">
+			<tr>
+				<th>Item Name</th>
+				<th>Cost</th>
+				<th>Description</th>
+				<th>Quantity</th>
+			</tr>
+			<tr>
+				<td>Shalamayne</td>
+				<td>$5,000.00</td>
+				<td>Varian may be gone (SPOILERS!), but his sword is still here</td>
+				<td><input type = "number" min = "0" name = "Quantity1" id = "Quantity1"></input></td>
+			</tr>
+			<tr>
+				<td>Frostmorne</td>
+				<td> $10,000.00</td>
+				<td>Straight from the Lich King's hand</td>
+				<td><input type = "number" min = "0" name = "Quantity2" id = "Quantity2"></input></td>
+			</tr>
+			<tr>
+				<td>Doomhammer</td>
+				<td>$7,000.00</td>
+				<td>No warchief should be caught without one of these</td>
+				<td><input type = "number" min = "0" name = "Quantity3" id = "Quantity3"></input></td>
+			</tr>
+			</table>
+			
+			<h2>Shipping Options:<br></h2>
+			<input type = "radio" name = "shipping" value = "Free 7 Day">Free 7 Day</input><br>
+			<input type = "radio" name = "shipping" value = "$50 Overnight">$50 Overnight</input><br>
+			<input type = "radio" name = "shipping" value = "$5.00 Three Day">$5.00 Three Day</input>
+			
+			<br><br>
+			
+			<input type = "reset"></input>
+			<input type = "submit"></input>
+		</form>
+	</body>
+	
+</html>

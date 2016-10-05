@@ -1,0 +1,17 @@
+table, th, td
+{
+	border: 2px solid black;
+}
+th
+{
+	background-color: yellow;
+}
+td
+{
+	background-color: orange;
+}
+
+body
+{
+	background-color:cyan;
+}
